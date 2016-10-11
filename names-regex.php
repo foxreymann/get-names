@@ -63,7 +63,7 @@ John Smith
 */
 
 
-preg_match_all("/[A-Z]([a-z]+|\.)(?:\s+[A-Z]([a-z]+|\.)*)*\s+[A-Z]([a-z]+|\.)*/",$str,$matches);
+preg_match_all("/[A-Z]([a-z]+|\.)(?:\s+[A-Z]([a-z]+|\.)*)*\s+[A-Z]([a-z]+|)*/",$str,$matches);
 
 $toRemove = array("Wednesday ");
 
