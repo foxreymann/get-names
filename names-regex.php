@@ -7,7 +7,7 @@ disagreed with Tom Boyd and William H John Smith. K. Harris is a long term
 business partner of Terry Wallace OBE. Tom Boyd and William Smith have no
 relations to each other. Sir Wallace can be reached at
 t.wallace@olord.com';
-preg_match_all("/[A-Z]([a-z]+|\.)(?:\s+[A-Z]([a-z]+|\.)*)*\s+[A-Z]([A-Za-z])*/",$str,$matches);
+preg_match_all("/[A-Z]([a-z]+|\.)(?:\s+[A-Z]([a-z]+|\.)*)\s+([A-Z]([A-Za-z])*)*/",$str,$matches);
 $toRemove = array(
     "Wednesday ",
     "Sir "
