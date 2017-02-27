@@ -17,8 +17,8 @@ foreach ($matches[0] as &$match) {
     $match = str_replace($toRemove, '', $match);
     $match = str_replace(PHP_EOL, ' ', $match);
 }
-print_r($matches[0]);
 $matches = array_unique($matches[0]);
+print_r($matches);
 
 $sentences = preg_split('/(?<=[^A-Z][.?!;:])\s+/', $str, -1,
 PREG_SPLIT_NO_EMPTY);
